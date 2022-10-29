@@ -24,7 +24,7 @@ def generate_initial_board():
 
 def row_safe(board, i, j):
     """
-    Check if number already in row.
+    Check if number is already in row.
     """
     for k in range(9):
         if k != j:
@@ -33,9 +33,9 @@ def row_safe(board, i, j):
     return True
 
 
-def column_safe(baord, i, j):
+def column_safe(board, i, j):
     """
-    Check if numebr alredy in column.
+    Check if number is already in column.
     """
     for k in range(9):
         if k != i:
@@ -46,7 +46,7 @@ def column_safe(baord, i, j):
 
 def box_safe(board, i, j):
     """
-    Check if number already in box.
+    Check if number is already in box.
     """
     for x in range((i // 3) * 3, (i // 3) * 3 + 3):
         for y in range((j // 3) * 3, (j // 3) * 3 + 3):
