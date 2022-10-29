@@ -55,3 +55,4 @@ def box_safe(board, i, j):
                     return False
     return True
 
+print("hello")
