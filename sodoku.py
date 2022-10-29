@@ -54,7 +54,3 @@ def box_safe(board, i, j):
                 if board[i][j] == board[x][y]:
                     return False
     return True
-
-board = generate_initial_board()
-for row in board:
-    print(row)
