@@ -55,4 +55,6 @@ def box_safe(board, i, j):
                     return False
     return True
 
-print("hello")
+board = generate_initial_board()
+for row in board:
+    print(row)
